@@ -44,7 +44,7 @@ function readURL(input) {
 		var reader = new FileReader();
 		reader.onload = function (e) {
 			cover.style.backgroundImage = `linear-gradient(0deg, #9725, #9725), url("${e.target.result}")`;
-			vinyl.style.backgroundImage = `url("./img/vinyl.png"),url("${e.target.result}")`;
+			vinyl.style.backgroundImage = `url("./img/vinyl.png"),url("${e.target.result}"), linear-gradient(0deg, #9725, #9725)`;
 		};
 		reader.readAsDataURL(input.files[0]);
 	}
